@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  P63TabBarController.h
 //  Phuot63
 //
 //  Created by Le Hoang Vu on 11/21/18.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface P63TabBarController : UITabBarController
 
 @end
 
+NS_ASSUME_NONNULL_END

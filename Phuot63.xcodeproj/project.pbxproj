@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B75ED23021AA9DA80037B1E6 /* P63Newsfeed.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED22F21AA9DA80037B1E6 /* P63Newsfeed.m */; };
+		B75ED23321AAA2260037B1E6 /* P63SampleDataPool.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED23221AAA2260037B1E6 /* P63SampleDataPool.m */; };
+		B75ED23621AAAA5F0037B1E6 /* P63NewsfeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED23521AAAA5F0037B1E6 /* P63NewsfeedCell.m */; };
 		B77C972421A55437005F173C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C972321A55437005F173C /* AppDelegate.m */; };
-		B77C972721A55437005F173C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C972621A55437005F173C /* ViewController.m */; };
+		B77C972721A55437005F173C /* P63NewsfeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C972621A55437005F173C /* P63NewsfeedViewController.m */; };
 		B77C972A21A55437005F173C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77C972821A55437005F173C /* Main.storyboard */; };
 		B77C972C21A55438005F173C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77C972B21A55438005F173C /* Assets.xcassets */; };
 		B77C972F21A55438005F173C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77C972D21A55438005F173C /* LaunchScreen.storyboard */; };
 		B77C973221A55438005F173C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C973121A55438005F173C /* main.m */; };
+		B77C973D21A55B30005F173C /* P63TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C973C21A55B30005F173C /* P63TabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B75ED22E21AA9DA80037B1E6 /* P63Newsfeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63Newsfeed.h; sourceTree = "<group>"; };
+		B75ED22F21AA9DA80037B1E6 /* P63Newsfeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63Newsfeed.m; sourceTree = "<group>"; };
+		B75ED23121AAA2260037B1E6 /* P63SampleDataPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63SampleDataPool.h; sourceTree = "<group>"; };
+		B75ED23221AAA2260037B1E6 /* P63SampleDataPool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63SampleDataPool.m; sourceTree = "<group>"; };
+		B75ED23421AAAA5F0037B1E6 /* P63NewsfeedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63NewsfeedCell.h; sourceTree = "<group>"; };
+		B75ED23521AAAA5F0037B1E6 /* P63NewsfeedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63NewsfeedCell.m; sourceTree = "<group>"; };
 		B77C971F21A55437005F173C /* Phuot63.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phuot63.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77C972221A55437005F173C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B77C972321A55437005F173C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B77C972521A55437005F173C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B77C972621A55437005F173C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B77C972521A55437005F173C /* P63NewsfeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63NewsfeedViewController.h; sourceTree = "<group>"; };
+		B77C972621A55437005F173C /* P63NewsfeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63NewsfeedViewController.m; sourceTree = "<group>"; };
 		B77C972921A55437005F173C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B77C972B21A55438005F173C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B77C972E21A55438005F173C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B77C973021A55438005F173C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B77C973121A55438005F173C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B77C973B21A55B30005F173C /* P63TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63TabBarController.h; sourceTree = "<group>"; };
+		B77C973C21A55B30005F173C /* P63TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63TabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +72,21 @@
 			children = (
 				B77C972221A55437005F173C /* AppDelegate.h */,
 				B77C972321A55437005F173C /* AppDelegate.m */,
-				B77C972521A55437005F173C /* ViewController.h */,
-				B77C972621A55437005F173C /* ViewController.m */,
+				B77C972521A55437005F173C /* P63NewsfeedViewController.h */,
+				B77C972621A55437005F173C /* P63NewsfeedViewController.m */,
 				B77C972821A55437005F173C /* Main.storyboard */,
 				B77C972B21A55438005F173C /* Assets.xcassets */,
 				B77C972D21A55438005F173C /* LaunchScreen.storyboard */,
 				B77C973021A55438005F173C /* Info.plist */,
 				B77C973121A55438005F173C /* main.m */,
+				B77C973B21A55B30005F173C /* P63TabBarController.h */,
+				B77C973C21A55B30005F173C /* P63TabBarController.m */,
+				B75ED22E21AA9DA80037B1E6 /* P63Newsfeed.h */,
+				B75ED22F21AA9DA80037B1E6 /* P63Newsfeed.m */,
+				B75ED23121AAA2260037B1E6 /* P63SampleDataPool.h */,
+				B75ED23221AAA2260037B1E6 /* P63SampleDataPool.m */,
+				B75ED23421AAAA5F0037B1E6 /* P63NewsfeedCell.h */,
+				B75ED23521AAAA5F0037B1E6 /* P63NewsfeedCell.m */,
 			);
 			path = Phuot63;
 			sourceTree = "<group>";
@@ -141,8 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B77C972721A55437005F173C /* ViewController.m in Sources */,
+				B77C972721A55437005F173C /* P63NewsfeedViewController.m in Sources */,
+				B75ED23321AAA2260037B1E6 /* P63SampleDataPool.m in Sources */,
+				B77C973D21A55B30005F173C /* P63TabBarController.m in Sources */,
+				B75ED23621AAAA5F0037B1E6 /* P63NewsfeedCell.m in Sources */,
 				B77C973221A55438005F173C /* main.m in Sources */,
+				B75ED23021AA9DA80037B1E6 /* P63Newsfeed.m in Sources */,
 				B77C972421A55437005F173C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
