@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "P63Newsfeed.h"
 #import "P63Schedule.h"
+#import "P63Place.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) NSMutableArray* newsfeeds;
 @property (nonatomic) NSMutableArray* schedules;
+@property (nonatomic) NSMutableArray* places;
+@property (nonatomic) NSString* currentLocation;
 
 @end
 

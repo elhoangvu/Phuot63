@@ -64,47 +64,62 @@
 }
 
 - (IBAction)didTapCreateScheduleButton:(id)sender {
+    BOOL shouldReturn = NO;
     if ([_addScheduleCell.startPlace.text isEqualToString:@""]) {
-        
-    } else if ([_addScheduleCell.destinationPlace.text isEqualToString:@""]) {
-        
-    } else {
-        NSString* uid = [P63UserInfo sharedInstance].uid;
-        NSString* partnersString = _addScheduleCell.partners.text;
-        partnersString = [partnersString stringByReplacingOccurrencesOfString:@" " withString:@""];
-        
-        NSArray* partners = [partnersString componentsSeparatedByString:@"@"];
-        P63Schedule* schedule = [[P63Schedule alloc] initWithUID:uid
-                                                      startPlace:_addScheduleCell.startPlace.text
-                                                destinationPlace:_addScheduleCell.destinationPlace.text
-                                                       startTime:[_addScheduleCell startDate]
-                                                         endTime:[_addScheduleCell endDate]
-                                                    expectedCost:[_addScheduleCell.expectedCost.text integerValue]
-                                                        partners:partners];
-        [[P63SampleDataPool sharedInstance].schedules addObject:schedule];
-        
-        P63CreateScheduleNotificationViewController* notiVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CreationNotificationVC"];
-        __weak __typeof(self)weakSelf = self;
-        notiVC.closeView = ^{
-            [weakSelf dismissViewControllerAnimated:NO completion:^{
-                [weakSelf dismissViewControllerAnimated:YES completion:nil];
-            }];
-        };
-        
-        notiVC.gotoManageSchedule = ^{
-            [weakSelf dismissViewControllerAnimated:NO completion:^{
-                [weakSelf dismissViewControllerAnimated:YES completion:^{
-                    P63CreateScheduleNavigationViewController* navigationVC = (P63CreateScheduleNavigationViewController *)weakSelf.navigationController;
-                    UITabBarController* tbvc = (UITabBarController *)navigationVC.presentedParentViewController;
-//                                        UIViewController* scheduleViewController = [weakSelf.storyboard instantiateViewControllerWithIdentifier:@"ScheduleVC"];
-                    [tbvc setSelectedViewController:[tbvc.viewControllers objectAtIndex:3]];
-                }];
-            }];
-        };
-
-        notiVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-        [self presentViewController:notiVC animated:NO completion:nil];
+        _addScheduleCell.startPlace.layer.borderWidth = 0.75f;
+        _addScheduleCell.startPlace.layer.borderColor = [UIColor colorWithRed:195.0f/255.0f green:74.0f/255.0f blue:68.0f/255.0f alpha:1.0f].CGColor;
+        shouldReturn = YES;
     }
+    
+    if ([_addScheduleCell.destinationPlace.text isEqualToString:@""]) {
+        _addScheduleCell.destinationPlace.layer.borderWidth = 0.75f;
+        _addScheduleCell.destinationPlace.layer.borderColor = [UIColor colorWithRed:195.0f/255.0f green:74.0f/255.0f blue:68.0f/255.0f alpha:1.0f].CGColor;
+        shouldReturn = YES;
+    }
+    
+    if (shouldReturn) {
+        return;
+    }
+    
+    NSString* uid = [P63UserInfo sharedInstance].uid;
+    NSString* partnersString = _addScheduleCell.partners.text;
+    partnersString = [partnersString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSArray* partners = [partnersString componentsSeparatedByString:@"@"];
+    NSRange range;
+    range.location = 1;
+    range.length = partners.count - 1;
+    partners = [partners subarrayWithRange:range];
+    P63Schedule* schedule = [[P63Schedule alloc] initWithUID:uid
+                                                  startPlace:_addScheduleCell.startPlace.text
+                                            destinationPlace:_addScheduleCell.destinationPlace.text
+                                                   startTime:[_addScheduleCell startDate]
+                                                     endTime:[_addScheduleCell endDate]
+                                                    distance:120
+                                                expectedCost:[_addScheduleCell.expectedCost.text integerValue]
+                                                    partners:partners];
+    [[P63SampleDataPool sharedInstance].schedules addObject:schedule];
+    
+    P63CreateScheduleNotificationViewController* notiVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CreationNotificationVC"];
+    __weak __typeof(self)weakSelf = self;
+    notiVC.closeView = ^{
+        [weakSelf dismissViewControllerAnimated:NO completion:^{
+            [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        }];
+    };
+    
+    notiVC.gotoManageSchedule = ^{
+        [weakSelf dismissViewControllerAnimated:NO completion:^{
+            [weakSelf dismissViewControllerAnimated:YES completion:^{
+                P63CreateScheduleNavigationViewController* navigationVC = (P63CreateScheduleNavigationViewController *)weakSelf.navigationController;
+                UITabBarController* tbvc = (UITabBarController *)navigationVC.presentedParentViewController;
+                [tbvc setSelectedViewController:[tbvc.viewControllers objectAtIndex:3]];
+            }];
+        }];
+    };
+
+    notiVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    [self presentViewController:notiVC animated:NO completion:nil];
 }
 
 

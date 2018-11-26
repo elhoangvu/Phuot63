@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,20 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSDate* endTime;
 @property (nonatomic) NSInteger expectedCost;
 @property (nonatomic) NSArray* partners;
+@property (nonatomic) NSInteger totalCost;
+@property (nonatomic) NSInteger distance;
+@property (nonatomic) NSString* totalTime;
+@property (nonatomic) UIImage* placeImage;
+@property (nonatomic) BOOL isFinish;
+
+- (instancetype)initWithUID:(NSString *)uid
+                 startPlace:(NSString *)startPlace
+           destinationPlace:(NSString *)destinationPlace
+                  startTime:(NSDate *)startTime
+                    endTime:(NSDate *)endTime
+                   distance:(NSInteger)distance
+               expectedCost:(NSInteger)expectedCost
+                   partners:(NSArray * __nullable)partners;
 
 - (instancetype)initWithUID:(NSString *)uid
                  startPlace:(NSString *)startPlace
@@ -26,7 +41,10 @@ NS_ASSUME_NONNULL_BEGIN
                   startTime:(NSDate *)startTime
                     endTime:(NSDate *)endTime
                expectedCost:(NSInteger)expectedCost
-                   partners:(NSArray * __nullable)partners;
+                   partners:(NSArray * __nullable)partners
+                  totalCost:(NSInteger)totalCost
+                   distance:(NSInteger)distance
+                   isFinish:(BOOL)isFinish;
 
 @end
 

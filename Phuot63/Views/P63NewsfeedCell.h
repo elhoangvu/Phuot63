@@ -28,8 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *likes;
 @property (weak, nonatomic) IBOutlet UIImageView *commentImage;
 @property (weak, nonatomic) IBOutlet UILabel *comments;
-@property (weak, nonatomic) IBOutlet UIImageView *shareImage;
-@property (weak, nonatomic) IBOutlet UILabel *shares;
+@property (weak, nonatomic) IBOutlet UIImageView *bookmarkImage;
+@property (weak, nonatomic) IBOutlet UILabel *bookmarks;
 
 @property (weak, nonatomic) P63Newsfeed* newsfeed;
 

@@ -1,8 +1,8 @@
 //
-//  P63ManageScheduleViewController.h
+//  P63ManagePlaceViewController.h
 //  Phuot63
 //
-//  Created by Le Hoang Vu on 11/26/18.
+//  Created by Le Hoang Vu on 11/27/18.
 //  Copyright © 2018 Le Hoang Vu. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface P63ManageScheduleViewController : UITableViewController
+@interface P63ManagePlaceViewController : UITableViewController
 
 @end
 

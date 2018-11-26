@@ -41,7 +41,17 @@
     _content.text = newsfeed.content;
     _likes.text = [NSString stringWithFormat:@"%ld", (long)newsfeed.likes];
     _comments.text = [NSString stringWithFormat:@"%ld", (long)newsfeed.comments];
-    _shares.text = [NSString stringWithFormat:@"%ld", (long)newsfeed.bookmarks];
+    _bookmarks.text = [NSString stringWithFormat:@"%ld", (long)newsfeed.bookmarks];
+    if (newsfeed.isLiked) {
+        _likeImage.image = [UIImage imageNamed:@"liked"];
+    } else {
+        _likeImage.image = [UIImage imageNamed:@"like2"];
+    }
+    if (newsfeed.isBookmarked) {
+        _bookmarkImage.image = [UIImage imageNamed:@"bookmarked"];
+    } else {
+        _bookmarkImage.image = [UIImage imageNamed:@"bookmark2"];
+    }
 }
 
 @end

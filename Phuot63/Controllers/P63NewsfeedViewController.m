@@ -56,7 +56,7 @@
                 subsubview.clipsToBounds = YES;
                 subsubview.layer.masksToBounds = YES;
                 UITextField* textField = (UITextField *)subsubview;
-                [(UITextField *)subsubview setFont:[textField.font fontWithSize:12]];
+                [(UITextField *)subsubview setFont:[textField.font fontWithSize:14]];
             }
         }
     }
@@ -76,7 +76,7 @@
 #pragma mark - UITableViewDataSource
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 410;
+    return 425;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

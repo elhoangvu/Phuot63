@@ -37,6 +37,20 @@
     
     _startTime.inputView = _startTimeDatePicker;
     _endTime.inputView = _endTimeDatePicker;
+    
+    [self setCornerRadiusTextField:_startPlace];
+    [self setCornerRadiusTextField:_destinationPlace];
+    [self setCornerRadiusTextField:_startTime];
+    [self setCornerRadiusTextField:_endTime];
+    [self setCornerRadiusTextField:_expectedCost];
+    [self setCornerRadiusTextField:_partners];
+}
+
+- (void)setCornerRadiusTextField:(UITextField *)textField {
+    textField.layer.cornerRadius = textField.frame.size.height*0.5f;
+    textField.layer.borderWidth = 0.25;
+    textField.layer.borderColor = [UIColor grayColor].CGColor;
+    textField.clipsToBounds = YES;
 }
 
 - (void)startTimeDateChange:(UIDatePicker *)datePicker {
@@ -69,6 +83,17 @@
 
 - (NSDate *)endDate {
     return _endTimeDatePicker.date;
+}
+
+- (IBAction)didChangeStartPlaceText:(UITextField *)sender {
+    if (sender.text.length == 0) {
+        sender.layer.borderWidth = 0.75;
+        sender.layer.borderColor = [UIColor colorWithRed:195.0f/255.0f green:74.0f/255.0f blue:68.0f/255.0f alpha:1.0f].CGColor;
+    } else {
+        sender.layer.borderWidth = 0.25;
+        sender.layer.borderColor = [UIColor grayColor].CGColor;
+    }
+
 }
 
 @end
