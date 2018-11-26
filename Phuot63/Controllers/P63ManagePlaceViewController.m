@@ -40,7 +40,14 @@
     NSDictionary* attributes = @{ NSFontAttributeName: font };
     UIBarButtonItem* rightButton = self.navigationItem.rightBarButtonItem;
     [rightButton setTitleTextAttributes:attributes forState:UIControlStateNormal];
+    
+    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapView:)];
+    [self.view addGestureRecognizer:tap];
 
+}
+
+- (void)didTapView:(UITapGestureRecognizer *)tapGesture {
+    [_searchBar endEditing:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -29,7 +29,7 @@
     _review = review;
     _lastUpdate = lastUpdate;
     
-    _placeImage = [UIImage imageNamed:_placeImage];
+    _placeImage = [UIImage imageNamed:_placeName];
     if (!_placeImage) {
         _placeImage = [UIImage imageNamed:@"phuot63"];
     }

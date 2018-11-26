@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *newsfeedTableView;
 @property (weak, nonatomic) P63SampleDataPool* sampleDataPool;
 @property (nonatomic) UISearchController* searchController;
+@property (nonatomic) UISearchBar* searchBar;
 
 @end
 
@@ -28,9 +29,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UISearchBar* searchBar = [[UISearchBar alloc] initWithFrame:(CGRectMake(0, 0, 100, 10))];
-    searchBar.placeholder = @"Tìm kiếm lịch trình";
-    self.navigationItem.titleView = searchBar;
+    _searchBar = [[UISearchBar alloc] initWithFrame:(CGRectMake(0, 0, 100, 10))];
+    _searchBar.placeholder = @"Tìm kiếm lịch trình";
+    self.navigationItem.titleView = _searchBar;
     self.extendedLayoutIncludesOpaqueBars = true;
     
     _newsfeedTableView.allowsSelection = NO;
@@ -40,6 +41,13 @@
     _newsfeedTableView.separatorColor = [UIColor clearColor];
     
     [_newsfeedTableView reloadData];
+    
+    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapView:)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)didTapView:(UITapGestureRecognizer *)tapGesture {
+    [_searchBar endEditing:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -76,7 +84,8 @@
 #pragma mark - UITableViewDataSource
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 425;
+    CGRect rect = UIScreen.mainScreen.bounds;
+    return 0.54*sqrt(rect.size.width*rect.size.width + rect.size.height*rect.size.height);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
