@@ -15,8 +15,7 @@
 , UITableViewDataSource
 , UISearchBarDelegate
 , UISearchResultsUpdating
-, UISearchControllerDelegate
->
+, UISearchControllerDelegate >
 
 @property (weak, nonatomic) IBOutlet UITableView *newsfeedTableView;
 @property (weak, nonatomic) P63SampleDataPool* sampleDataPool;
@@ -38,6 +37,7 @@
     _sampleDataPool = [P63SampleDataPool sharedInstance];
     _newsfeedTableView.dataSource = self;
     _newsfeedTableView.delegate = self;
+    _newsfeedTableView.separatorColor = [UIColor clearColor];
     
     [_newsfeedTableView reloadData];
 }

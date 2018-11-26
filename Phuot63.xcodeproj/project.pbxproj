@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B756165621ABB3B6005E7BFF /* P63AddScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B756165521ABB3B6005E7BFF /* P63AddScheduleViewController.m */; };
+		B756165921ABBA64005E7BFF /* P63AddScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B756165821ABBA64005E7BFF /* P63AddScheduleCell.m */; };
 		B75ED23021AA9DA80037B1E6 /* P63Newsfeed.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED22F21AA9DA80037B1E6 /* P63Newsfeed.m */; };
 		B75ED23321AAA2260037B1E6 /* P63SampleDataPool.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED23221AAA2260037B1E6 /* P63SampleDataPool.m */; };
 		B75ED23621AAAA5F0037B1E6 /* P63NewsfeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED23521AAAA5F0037B1E6 /* P63NewsfeedCell.m */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B756165421ABB3B6005E7BFF /* P63AddScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63AddScheduleViewController.h; sourceTree = "<group>"; };
+		B756165521ABB3B6005E7BFF /* P63AddScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63AddScheduleViewController.m; sourceTree = "<group>"; };
+		B756165721ABBA64005E7BFF /* P63AddScheduleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63AddScheduleCell.h; sourceTree = "<group>"; };
+		B756165821ABBA64005E7BFF /* P63AddScheduleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63AddScheduleCell.m; sourceTree = "<group>"; };
 		B75ED22E21AA9DA80037B1E6 /* P63Newsfeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63Newsfeed.h; sourceTree = "<group>"; };
 		B75ED22F21AA9DA80037B1E6 /* P63Newsfeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63Newsfeed.m; sourceTree = "<group>"; };
 		B75ED23121AAA2260037B1E6 /* P63SampleDataPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63SampleDataPool.h; sourceTree = "<group>"; };
@@ -87,6 +93,10 @@
 				B75ED23221AAA2260037B1E6 /* P63SampleDataPool.m */,
 				B75ED23421AAAA5F0037B1E6 /* P63NewsfeedCell.h */,
 				B75ED23521AAAA5F0037B1E6 /* P63NewsfeedCell.m */,
+				B756165421ABB3B6005E7BFF /* P63AddScheduleViewController.h */,
+				B756165521ABB3B6005E7BFF /* P63AddScheduleViewController.m */,
+				B756165721ABBA64005E7BFF /* P63AddScheduleCell.h */,
+				B756165821ABBA64005E7BFF /* P63AddScheduleCell.m */,
 			);
 			path = Phuot63;
 			sourceTree = "<group>";
@@ -164,8 +174,10 @@
 				B77C972721A55437005F173C /* P63NewsfeedViewController.m in Sources */,
 				B75ED23321AAA2260037B1E6 /* P63SampleDataPool.m in Sources */,
 				B77C973D21A55B30005F173C /* P63TabBarController.m in Sources */,
+				B756165621ABB3B6005E7BFF /* P63AddScheduleViewController.m in Sources */,
 				B75ED23621AAAA5F0037B1E6 /* P63NewsfeedCell.m in Sources */,
 				B77C973221A55438005F173C /* main.m in Sources */,
+				B756165921ABBA64005E7BFF /* P63AddScheduleCell.m in Sources */,
 				B75ED23021AA9DA80037B1E6 /* P63Newsfeed.m in Sources */,
 				B77C972421A55437005F173C /* AppDelegate.m in Sources */,
 			);
