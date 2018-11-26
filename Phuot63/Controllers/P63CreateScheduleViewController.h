@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface P63AddScheduleViewController : UIViewController
+@interface P63CreateScheduleViewController : UIViewController
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "P63TabBarController.h"
+#import "P63CreateScheduleNavigationViewController.h"
 
 @interface P63TabBarController () <UITabBarDelegate, UITabBarControllerDelegate>
 
@@ -67,7 +68,8 @@
 
 - (void)didTapScheduleView:(UITapGestureRecognizer *)sender {
     [_backgroundView setHidden:YES];
-    UIViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AddScheduleVC"];
+    P63CreateScheduleNavigationViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AddScheduleVC"];
+    vc.presentedParentViewController = self;
     [self presentViewController:vc animated:YES completion:nil];
 }
 

@@ -10,14 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface P63AddScheduleCell : UITableViewCell
+@interface P63CreateScheduleCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UITextField *startPlace;
 @property (weak, nonatomic) IBOutlet UITextField *destinationPlace;
 @property (weak, nonatomic) IBOutlet UITextField *startTime;
 @property (weak, nonatomic) IBOutlet UITextField *endTime;
 @property (weak, nonatomic) IBOutlet UITextField *expectedCost;
 @property (weak, nonatomic) IBOutlet UITextField *partners;
-@property (weak, nonatomic) IBOutlet UIButton *createScheduleButton;
+
+- (NSDate *)startDate;
+- (NSDate *)endDate;
 
 @end
 

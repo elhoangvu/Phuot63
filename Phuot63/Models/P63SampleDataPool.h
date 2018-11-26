@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "P63Newsfeed.h"
+#import "P63Schedule.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
-@property (nonatomic) NSArray* newsfeeds;
+@property (nonatomic) NSMutableArray* newsfeeds;
+@property (nonatomic) NSMutableArray* schedules;
 
 @end
 

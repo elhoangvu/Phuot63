@@ -30,7 +30,7 @@
     NSDateFormatter* df = [[NSDateFormatter alloc]init];
     [df setDateFormat:@"dd/MM/yyyy"];
     NSString* date = [df stringFromDate:_newsfeed.postedTime];
-    _postedTime.text = date;
+    _uidAndpostedTime.text = [NSString stringWithFormat:@"@%@ ∙ %@", newsfeed.uid, date];
     if (newsfeed.photos) {
         _photo.image = [newsfeed.photos objectAtIndex:0];
     }
