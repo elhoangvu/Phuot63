@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSMutableArray* places;
 @property (nonatomic) NSString* currentLocation;
 
+- (NSArray *)addressPlaces;
+
 @end
 
 NS_ASSUME_NONNULL_END

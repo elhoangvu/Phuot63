@@ -35,6 +35,15 @@
     return self;
 }
 
+- (NSArray *)addressPlaces {
+    NSMutableArray* addresses = [NSMutableArray array];
+    for (P63Place* place in _places) {
+        [addresses addObject:place.fullPlaceDescription];
+    }
+    
+    return addresses;
+}
+
 - (void)initNewsfeeds {
     _newsfeeds = [NSMutableArray arrayWithCapacity:23];
     NSMutableArray* photos    = [NSMutableArray array];

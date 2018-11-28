@@ -28,6 +28,8 @@
 		B77C972F21A55438005F173C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77C972D21A55438005F173C /* LaunchScreen.storyboard */; };
 		B77C973221A55438005F173C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C973121A55438005F173C /* main.m */; };
 		B77C973D21A55B30005F173C /* P63TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C973C21A55B30005F173C /* P63TabBarController.m */; };
+		B781A4E521AEC64700C987F8 /* P63SearchPlacePathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B781A4E421AEC64700C987F8 /* P63SearchPlacePathViewController.m */; };
+		B781A4E821AEDDB000C987F8 /* P63UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B781A4E721AEDDB000C987F8 /* P63UserInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,10 @@
 		B77C973121A55438005F173C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B77C973B21A55B30005F173C /* P63TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63TabBarController.h; sourceTree = "<group>"; };
 		B77C973C21A55B30005F173C /* P63TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63TabBarController.m; sourceTree = "<group>"; };
+		B781A4E321AEC64700C987F8 /* P63SearchPlacePathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63SearchPlacePathViewController.h; sourceTree = "<group>"; };
+		B781A4E421AEC64700C987F8 /* P63SearchPlacePathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63SearchPlacePathViewController.m; sourceTree = "<group>"; };
+		B781A4E621AEDDB000C987F8 /* P63UserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63UserInfoViewController.h; sourceTree = "<group>"; };
+		B781A4E721AEDDB000C987F8 /* P63UserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63UserInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 				B756166921AC41CB005E7BFF /* P63ManageScheduleViewController.m */,
 				B71CF48521AC704E007E87F1 /* P63ManagePlaceViewController.h */,
 				B71CF48621AC704E007E87F1 /* P63ManagePlaceViewController.m */,
+				B781A4E321AEC64700C987F8 /* P63SearchPlacePathViewController.h */,
+				B781A4E421AEC64700C987F8 /* P63SearchPlacePathViewController.m */,
+				B781A4E621AEDDB000C987F8 /* P63UserInfoViewController.h */,
+				B781A4E721AEDDB000C987F8 /* P63UserInfoViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,10 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71CF48721AC704E007E87F1 /* P63ManagePlaceViewController.m in Sources */,
+				B781A4E821AEDDB000C987F8 /* P63UserInfoViewController.m in Sources */,
 				B77C972721A55437005F173C /* P63NewsfeedViewController.m in Sources */,
 				B75ED23321AAA2260037B1E6 /* P63SampleDataPool.m in Sources */,
 				B71CF48A21AC7FF1007E87F1 /* P63PlaceCell.m in Sources */,
 				B756166A21AC41CB005E7BFF /* P63ManageScheduleViewController.m in Sources */,
+				B781A4E521AEC64700C987F8 /* P63SearchPlacePathViewController.m in Sources */,
 				B71CF48421AC6E75007E87F1 /* P63Place.m in Sources */,
 				B756166721AC3FB7005E7BFF /* P63CreateScheduleNavigationViewController.m in Sources */,
 				B77C973D21A55B30005F173C /* P63TabBarController.m in Sources */,

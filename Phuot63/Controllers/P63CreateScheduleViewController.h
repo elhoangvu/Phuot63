@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface P63CreateScheduleViewController : UIViewController
 
+- (void)didEndEditingWithStartPlace:(NSString *)startPlace
+                   destinationPlace:(NSString *)destination;
+
 @end
 
 NS_ASSUME_NONNULL_END

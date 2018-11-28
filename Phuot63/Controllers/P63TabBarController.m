@@ -68,13 +68,13 @@
 
 - (void)didTapScheduleView:(UITapGestureRecognizer *)sender {
     [_backgroundView setHidden:YES];
-    P63CreateScheduleNavigationViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AddScheduleVC"];
-    vc.presentedParentViewController = self;
-    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didTapReviewView:(UITapGestureRecognizer *)sender {
     [_backgroundView setHidden:YES];
+    P63CreateScheduleNavigationViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AddScheduleVC"];
+    vc.presentedParentViewController = self;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
