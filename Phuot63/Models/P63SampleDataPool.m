@@ -30,9 +30,31 @@
     [self initNewsfeeds];
     [self initSchedules];
     [self initPlaces];
+    [self initUsers];
     _currentLocation = @"Lagi";
     
     return self;
+}
+
+- (void)initUsers {
+    _users = [NSMutableArray array];
+    P63UserInfo* user = [[P63UserInfo alloc] init];
+    user.userID = @"lehoangvu";
+    user.displayname = @"Lê Hoàng Vũ";
+    user.avatar = [UIImage imageNamed:@"lehoangvu"];
+    [_users addObject:user];
+    
+    P63UserInfo* user2 = [[P63UserInfo alloc] init];
+    user2.userID = @"trancaoviet";
+    user2.displayname = @"Trần Cao Việt";
+    user2.avatar = [UIImage imageNamed:@"trancaoviet"];
+    [_users addObject:user2];
+    
+    P63UserInfo* user3 = [[P63UserInfo alloc] init];
+    user3.userID = @"ttthanhtuyen";
+    user3.displayname = @"Trần Thị Thanh Tuyền";
+    user3.avatar = [UIImage imageNamed:@"ttthanhtuyen"];
+    [_users addObject:user3];
 }
 
 - (NSArray *)addressPlaces {

@@ -67,12 +67,12 @@
 //    CGRect size = keyboardSize.CGRectValue;
     
     if (!_isShowKeyboard) {
-        NSLog(@">>>> HV: %f", _addScheduleCell.partners.frame.origin.y);
+//        NSLog(@">>>> HV: %f", _addScheduleCell.partners.frame.origin.y);
         CGFloat kz = 180.0f;
         if (UIScreen.mainScreen.bounds.size.height > 700) {
             kz = 300.0f;
         }
-        _pushViewOffset = UIScreen.mainScreen.bounds.size.height - kz - _addScheduleCell.partners.frame.origin.y + _addScheduleCell.partners.frame.size.height - _mapImageView.frame.size.height;
+//        _pushViewOffset = UIScreen.mainScreen.bounds.size.height - kz - _addScheduleCell.partners.frame.origin.y + _addScheduleCell.partners.frame.size.height - _mapImageView.frame.size.height;
         if (_pushViewOffset > 0) {
             __weak __typeof(self)weakSelf = self;
             [UIView animateWithDuration:0.5 animations:^{
@@ -118,7 +118,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 310;
+    return 350;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -127,6 +127,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     _addScheduleCell = [tableView dequeueReusableCellWithIdentifier:@"AddScheduleCell"];
+    _addScheduleCell.rootVC = self;
     return _addScheduleCell;
 }
 
@@ -152,15 +153,16 @@
         return;
     }
     
-    NSString* uid = [P63UserInfo sharedInstance].uid;
-    NSString* partnersString = _addScheduleCell.partners.text;
-    partnersString = [partnersString stringByReplacingOccurrencesOfString:@" " withString:@""];
-    
-    NSArray* partners = [partnersString componentsSeparatedByString:@"@"];
-    NSRange range;
-    range.location = 1;
-    range.length = partners.count - 1;
-    partners = [partners subarrayWithRange:range];
+    NSString* uid = [P63UserInfo sharedInstance].userID;
+//    NSString* partnersString = _addScheduleCell.partners.text;
+//    partnersString = [partnersString stringByReplacingOccurrencesOfString:@" " withString:@""];
+//
+//    NSArray* partners = [partnersString componentsSeparatedByString:@"@"];
+//    NSRange range;
+//    range.location = 1;
+//    range.length = partners.count - 1;
+//    partners = [partners subarrayWithRange:range];
+    NSArray* partners = _addScheduleCell.partners;
     
     NSString* start = [NSString string];
     NSString* des = [NSString string];

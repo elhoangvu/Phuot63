@@ -16,10 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UITextField *startTime;
 @property (weak, nonatomic) IBOutlet UITextField *endTime;
 @property (weak, nonatomic) IBOutlet UITextField *expectedCost;
-@property (weak, nonatomic) IBOutlet UITextField *partners;
+//@property (weak, nonatomic) IBOutlet UITextField *partners;
+@property (weak, nonatomic) IBOutlet UITableView *partnerTableView;
+@property (nonatomic) NSArray* partners;
+@property (weak, nonatomic) UIViewController* rootVC;
 
+- (void)didEndSelectPartner:(NSArray *)partners;
 - (NSDate *)startDate;
 - (NSDate *)endDate;
+
 
 @end
 

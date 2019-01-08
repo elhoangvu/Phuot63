@@ -30,6 +30,9 @@
 		B77C973D21A55B30005F173C /* P63TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C973C21A55B30005F173C /* P63TabBarController.m */; };
 		B781A4E521AEC64700C987F8 /* P63SearchPlacePathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B781A4E421AEC64700C987F8 /* P63SearchPlacePathViewController.m */; };
 		B781A4E821AEDDB000C987F8 /* P63UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B781A4E721AEDDB000C987F8 /* P63UserInfoViewController.m */; };
+		B79162D621E416A9003F62D8 /* P63AddPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79162D521E416A9003F62D8 /* P63AddPartnerViewController.m */; };
+		B79162D921E41C8D003F62D8 /* P63PartnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B79162D821E41C8D003F62D8 /* P63PartnerCell.m */; };
+		B79162DC21E42F3B003F62D8 /* P63PartnerCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = B79162DB21E42F3B003F62D8 /* P63PartnerCell2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,12 @@
 		B781A4E421AEC64700C987F8 /* P63SearchPlacePathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63SearchPlacePathViewController.m; sourceTree = "<group>"; };
 		B781A4E621AEDDB000C987F8 /* P63UserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63UserInfoViewController.h; sourceTree = "<group>"; };
 		B781A4E721AEDDB000C987F8 /* P63UserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63UserInfoViewController.m; sourceTree = "<group>"; };
+		B79162D421E416A9003F62D8 /* P63AddPartnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63AddPartnerViewController.h; sourceTree = "<group>"; };
+		B79162D521E416A9003F62D8 /* P63AddPartnerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63AddPartnerViewController.m; sourceTree = "<group>"; };
+		B79162D721E41C8D003F62D8 /* P63PartnerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63PartnerCell.h; sourceTree = "<group>"; };
+		B79162D821E41C8D003F62D8 /* P63PartnerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63PartnerCell.m; sourceTree = "<group>"; };
+		B79162DA21E42F3B003F62D8 /* P63PartnerCell2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P63PartnerCell2.h; sourceTree = "<group>"; };
+		B79162DB21E42F3B003F62D8 /* P63PartnerCell2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = P63PartnerCell2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,8 @@
 				B781A4E421AEC64700C987F8 /* P63SearchPlacePathViewController.m */,
 				B781A4E621AEDDB000C987F8 /* P63UserInfoViewController.h */,
 				B781A4E721AEDDB000C987F8 /* P63UserInfoViewController.m */,
+				B79162D421E416A9003F62D8 /* P63AddPartnerViewController.h */,
+				B79162D521E416A9003F62D8 /* P63AddPartnerViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +137,10 @@
 				B71CF48021AC6441007E87F1 /* P63ScheduleCell.m */,
 				B71CF48821AC7FF1007E87F1 /* P63PlaceCell.h */,
 				B71CF48921AC7FF1007E87F1 /* P63PlaceCell.m */,
+				B79162D721E41C8D003F62D8 /* P63PartnerCell.h */,
+				B79162D821E41C8D003F62D8 /* P63PartnerCell.m */,
+				B79162DA21E42F3B003F62D8 /* P63PartnerCell2.h */,
+				B79162DB21E42F3B003F62D8 /* P63PartnerCell2.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,11 +267,13 @@
 			files = (
 				B71CF48721AC704E007E87F1 /* P63ManagePlaceViewController.m in Sources */,
 				B781A4E821AEDDB000C987F8 /* P63UserInfoViewController.m in Sources */,
+				B79162D621E416A9003F62D8 /* P63AddPartnerViewController.m in Sources */,
 				B77C972721A55437005F173C /* P63NewsfeedViewController.m in Sources */,
 				B75ED23321AAA2260037B1E6 /* P63SampleDataPool.m in Sources */,
 				B71CF48A21AC7FF1007E87F1 /* P63PlaceCell.m in Sources */,
 				B756166A21AC41CB005E7BFF /* P63ManageScheduleViewController.m in Sources */,
 				B781A4E521AEC64700C987F8 /* P63SearchPlacePathViewController.m in Sources */,
+				B79162D921E41C8D003F62D8 /* P63PartnerCell.m in Sources */,
 				B71CF48421AC6E75007E87F1 /* P63Place.m in Sources */,
 				B756166721AC3FB7005E7BFF /* P63CreateScheduleNavigationViewController.m in Sources */,
 				B77C973D21A55B30005F173C /* P63TabBarController.m in Sources */,
@@ -268,6 +285,7 @@
 				B75ED23021AA9DA80037B1E6 /* P63Newsfeed.m in Sources */,
 				B756166421AC2023005E7BFF /* P63CreateScheduleNotificationViewController.m in Sources */,
 				B756165F21AC110E005E7BFF /* P63UserInfo.m in Sources */,
+				B79162DC21E42F3B003F62D8 /* P63PartnerCell2.m in Sources */,
 				B756165C21AC0783005E7BFF /* P63Schedule.m in Sources */,
 				B77C972421A55437005F173C /* AppDelegate.m in Sources */,
 			);

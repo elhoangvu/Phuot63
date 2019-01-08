@@ -32,7 +32,7 @@
 }
 
 - (void)initUserInfo {
-    _uid = @"lehoangvu";
+    _userID = @"lehoangvu";
     _displayname = @"Lê Hoàng Vũ";
     _avatar = [UIImage imageNamed:@"11111111"];
 }

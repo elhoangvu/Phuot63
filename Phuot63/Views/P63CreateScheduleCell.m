@@ -7,8 +7,12 @@
 //
 
 #import "P63CreateScheduleCell.h"
+#import "P63UserInfo.h"
+#import "P63SampleDataPool.h"
+#import "P63AddPartnerViewController.h"
+#import "P63PartnerCell2.h"
 
-@interface P63CreateScheduleCell ()
+@interface P63CreateScheduleCell () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic) UIDatePicker* startTimeDatePicker;
 @property (nonatomic) UIDatePicker* endTimeDatePicker;
@@ -38,12 +42,17 @@
     _startTime.inputView = _startTimeDatePicker;
     _endTime.inputView = _endTimeDatePicker;
     
+    _partnerTableView.delegate = self;
+    _partnerTableView.dataSource = self;
+    _partnerTableView.separatorColor = [UIColor clearColor];
+//    _partners = P63SampleDataPool.sharedInstance.users;
+    
     [self setCornerRadiusTextField:_startPlace];
     [self setCornerRadiusTextField:_destinationPlace];
     [self setCornerRadiusTextField:_startTime];
     [self setCornerRadiusTextField:_endTime];
     [self setCornerRadiusTextField:_expectedCost];
-    [self setCornerRadiusTextField:_partners];
+//    [self setCornerRadiusTextField:_partners];
 }
 
 - (void)setCornerRadiusTextField:(UITextField *)textField {
@@ -93,7 +102,46 @@
         sender.layer.borderWidth = 0.25;
         sender.layer.borderColor = [UIColor grayColor].CGColor;
     }
-
 }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _partners.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    P63PartnerCell2* cell = [tableView dequeueReusableCellWithIdentifier:@"PartnerCell"];
+    P63UserInfo* user = (P63UserInfo *)[_partners objectAtIndex:indexPath.row];
+    cell.name.text = user.displayname;
+    cell.avatar.image = user.avatar;
+    cell.avatar.layer.cornerRadius = 15.0f;
+    
+    cell.avatar.clipsToBounds = YES;
+    UIView* view = [[UIView alloc] init];
+    view.backgroundColor = UIColor.clearColor;
+    cell.selectedBackgroundView = view;
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 40;
+}
+
+- (void)didEndSelectPartner:(NSArray *)partners {
+    _partners = partners;
+    [_partnerTableView reloadData];
+}
+
+- (IBAction)didTapEditButton:(id)sender {
+    P63AddPartnerViewController* vc = [_rootVC.storyboard instantiateViewControllerWithIdentifier:@"AddPartnerVC"];
+    vc.root = self;
+    [_rootVC.navigationController pushViewController:vc animated:YES];
+}
+
+
 
 @end

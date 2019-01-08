@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface P63UserInfo : NSObject
 
-@property (nonatomic, readonly) NSString* uid;
-@property (nonatomic, readonly) NSString* displayname;
-@property (nonatomic, readonly) UIImage* avatar;
+@property (nonatomic) NSString* userID;
+@property (nonatomic) NSString* displayname;
+@property (nonatomic) UIImage* avatar;
 
 + (instancetype)sharedInstance;
 
