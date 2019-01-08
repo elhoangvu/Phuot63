@@ -926,20 +926,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="15P-bf-00h">
-                                                    <rect key="frame" x="30" y="5" width="33.5" height="33.5"/>
+                                                    <rect key="frame" x="20" y="5" width="33.5" height="33.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="15P-bf-00h" secondAttribute="height" multiplier="1:1" id="DI3-10-5Ad"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5q-oO-fRu">
-                                                    <rect key="frame" x="78.5" y="10" width="276.5" height="23.5"/>
+                                                    <rect key="frame" x="68.5" y="10" width="286.5" height="23.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="0.14999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="15P-bf-00h" firstAttribute="leading" secondItem="wk3-47-x8T" secondAttribute="leading" constant="30" id="0qI-Id-qvG"/>
+                                                <constraint firstItem="15P-bf-00h" firstAttribute="leading" secondItem="wk3-47-x8T" secondAttribute="leading" constant="20" id="0qI-Id-qvG"/>
                                                 <constraint firstItem="N5q-oO-fRu" firstAttribute="leading" secondItem="15P-bf-00h" secondAttribute="trailing" constant="15" id="83n-9A-MU2"/>
                                                 <constraint firstItem="N5q-oO-fRu" firstAttribute="top" secondItem="wk3-47-x8T" secondAttribute="top" constant="10" id="Qmq-uD-ZBW"/>
                                                 <constraint firstAttribute="bottom" secondItem="N5q-oO-fRu" secondAttribute="bottom" constant="10" id="ax7-gR-2by"/>
