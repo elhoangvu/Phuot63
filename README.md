@@ -1,5 +1,5 @@
 # Phuot63 App
-## The project is a prototype demo about a supporting backpacking application
+## The project is a prototype demo about a support backpacking application
 This project was created in The user interface design course, ITUS, HCMUS, VNU.
 
 ## Demo
