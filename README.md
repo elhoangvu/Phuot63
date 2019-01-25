@@ -26,9 +26,9 @@ Youtube: https://www.youtube.com/watch?v=YcowaTAD3tc
 | Tran Thi Thanh Van | 1512663 |
 | Nguyen Phan Minh Phu | 1552004|
 
-##### Author: Le Hoang Vu
 
-##### Xcode 10.1
-##### Objective-C
-##### Graphic design courses
-##### HCMUS
+- Xcode 10.1
+- Objective-C
+- Graphic design courses
+- HCMUS
+##### Author: Le Hoang Vu
